@@ -4,15 +4,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * struct singly_l - singly linked list
- * @i: is integet
- * @flow: pointer to the next node
+ * struct listint_s - singly linked list
+ * @n: is integet
+ * @next: pointer to the next node
  * Description: singly linked list node structure
  */
-typedef struct singly_l
+typedef struct listint_s
 {
-	int i;
-	struct singly_l *flow;
-} singly_t;
+	int n;
+	struct listint_s *next;
+}listint_t;
+size_t print_listint(const listint_t *h);
+listint_t *add_nodeint(listint_t **head, const int n);
+void free_listint(listint_t *head);
+int check_cycle(listint_t *list);
 
 #endif
