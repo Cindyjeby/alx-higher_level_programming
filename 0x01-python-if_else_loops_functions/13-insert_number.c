@@ -15,8 +15,18 @@ listint_t *insert_node(listint_t **head, int number)
 	mpya = malloc(sizeof(listint_t));
 	if (!mpya)
 		return (0);
-	mya-> = number;
+	mpya->n = number;
 
 	if (*head == NULL || (*head)->n > number)
 	{
+		mpya->next = *head;
+		*head = mpya;
+		return (mpya);
+	}
 
+	for (; mzee->mpya != NULL && (mzee->next)->n < number; mzee = mzee->next)
+		;
+	mpya->next = mzee->next;
+	mzee->next = mpya;
+	return (mpya);
+}
