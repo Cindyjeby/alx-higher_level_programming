@@ -2,7 +2,8 @@
 if __name__ == "__main__":
     import sys
 
-    total = 0
-    for k in range(1, len(sys.argv)):
-        total += int(sys.argv(k)
-     print("{:d}".format(total))
+    if len(sys.argv) == 1:
+        print(0)
+    else:
+        total = sum(int(k) for k in sys.argv[1:])
+        print(total)
