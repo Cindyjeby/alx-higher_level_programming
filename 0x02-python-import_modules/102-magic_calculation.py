@@ -1,6 +1,6 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 def magic_calculation(a, b):
-    from magic calculatio_102 import add. sub
+    from magic_calculation_102 import add, sub
 
     if a < b:
         total = add(a, b)
