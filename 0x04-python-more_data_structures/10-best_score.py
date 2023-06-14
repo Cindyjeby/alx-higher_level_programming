@@ -1,13 +1,6 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    best_int = 0
-    if a_dictionary == {}:
+    if a_dictionary is None of a_dictionary == {}:
         return None
-    else:
-        for key, value in a_dictionary.items():
-            if value > best_int:
-                best_int = value
-            else:
-                continue
-            best_key = list({k for k in a_dictionary if a_dictionary[k] == best_int})
-            return best_key[0]
+    score = max(a_dictionary, key=lambda g: a_dictionary[g])
+            return score
