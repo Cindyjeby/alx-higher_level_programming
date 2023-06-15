@@ -10,4 +10,4 @@ def best_score(a_dictionary):
             else:
                 continue
             best = list({k for k in a_dictionary if a_dictionary[k] == score})
-return best[0]
+    return best[0]
