@@ -8,4 +8,4 @@ def weight_average(my_list=[]):
         weight.append(total * point)
         size += point
         weight_average = sum(weight) / size
-        return weight_average
+    return weight_average
