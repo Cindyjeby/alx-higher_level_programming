@@ -2,14 +2,19 @@
 
 """define a square class"""
 
+
 class Square:
-    """size is an int greater than 0"""
-    self.__size = size
+    """
+    size is an int greater than 0
+    """
+    def __init__(self, size=0):
+    self.size = size
 
     @property
     def size(self):
         """getter method"""
         return self.__size
+
     @size.setter
     def size(self, value):
         """setter method"""
@@ -17,8 +22,9 @@ class Square:
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
+
             self._size = value
 
     def area(self):
         """return current area"""
-        return self.__size *self.__size
+        return self.__size * self.__size
