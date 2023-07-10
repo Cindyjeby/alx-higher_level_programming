@@ -1,8 +1,8 @@
 #!/usr/bin/pyhton3
-
 """defines an attribute and object lookup function"""
 
+
 def lookup(obj):
-    """returns a list of all the available attributes and methos"""
+    """returns a list of all the available attributes and methods"""
 
     return dir(obj)
