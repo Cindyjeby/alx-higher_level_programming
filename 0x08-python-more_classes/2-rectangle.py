@@ -10,7 +10,7 @@ class Rectangle:
         width (itn): width of the rectangle
         height (int): height of the recatngle
         """
-        slef.width = width
+        self.width = width
         self.height = height
 
         @property
@@ -20,11 +20,11 @@ class Rectangle:
 
         @width.setter
         def width(self, value):
-            """setter for thr widht"""
+            """setter for thr width"""
 
             if not isinstance(value, int):
                 raise TypeError("width must be an int")
-            if vale < 0:
+            if value < 0:
             raise ValueErroe("width must be >= 0")
         self.__width = value
 
@@ -43,7 +43,7 @@ class Rectangle:
                 raise TypeError("height must be an int")
             if value < 0:
                 raise ValueError("height must be > 0")
-            slef.__height = value
+            self.__height = value
 
             def area(self):
                 return self.width * self.height
