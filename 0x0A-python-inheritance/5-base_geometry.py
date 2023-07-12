@@ -2,6 +2,7 @@
 
 """defines an empty class"""
 
+
 class BaseGeometry:
     """empty class"""
 
