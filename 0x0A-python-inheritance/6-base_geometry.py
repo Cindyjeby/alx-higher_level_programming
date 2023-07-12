@@ -2,6 +2,7 @@
 
 """defines a Base_geometry class"""
 
+
 class BaseGeometry:
     """reps the class BaseGeometry"""
 
