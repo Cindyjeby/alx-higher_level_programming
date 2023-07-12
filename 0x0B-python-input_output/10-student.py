@@ -2,6 +2,7 @@
 
 """defines a student class"""
 
+
 class Student:
     """defines a student"""
 
