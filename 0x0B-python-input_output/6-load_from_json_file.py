@@ -9,5 +9,5 @@ def load_from_json_file(filename):
     """create an object from a JSON file"""
 
     with open(filename, 'r', encoding='UTF -8') as myFile:
-        json_object = json.load(myfile)
+        json_object = json.load(myFile)
         return json_object
