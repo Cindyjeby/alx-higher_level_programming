@@ -2,7 +2,8 @@
 
 """search and update"""
 
-def append_after(finename="", search_string="", new_string=""):
+
+def append_after(filename="", search_string="", new_string=""):
     """function that inserts a line of text to a file"""
     with open(filename, "r") as f:
         text = f.readlines()
