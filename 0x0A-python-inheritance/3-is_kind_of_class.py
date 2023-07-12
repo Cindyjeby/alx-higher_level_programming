@@ -2,6 +2,7 @@
 
 """module is 3-is_kind_of_class"""
 
+
 def is_kind_of_class(obj, a_class):
     """
     is a function that returns True if the object is an instance,
