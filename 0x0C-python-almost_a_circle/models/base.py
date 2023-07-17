@@ -60,7 +60,7 @@ class Base:
         try:
             with open(cls.__name__ + ".json", "r") as file:
                 list = cls.from_json_string(file.read())
-                return [cls.create(**dic) for in list]
+                return [cls.create(**dic) for dic in list]
         except FileNotFoundError:
             return []
 
@@ -93,11 +93,11 @@ class Base:
                     fieldnames = ["id", "size", "x", "y"]
                     list = csv.DictReader(file, fieldnames=fieldnames)
 
-                    list = [dict(k, int(v0] for k, v in d.items())
+                    list = [dict([k, int(v)] for k, v in d.items())
                             for d in list]
                     return [cls.create(**d) for d in list]
-                except IOError:
-                    return []
+        except IOError:
+            return []
 
     @staticmethod
     def draw(list_rectangles, list_square):
