@@ -9,13 +9,13 @@ import turtle
 
 class Base:
     """the base class"""
-    __nb_object = 0
+    __nb_objects = 0
 
     def __init__(self, id=None):
         if id is not None:
             self.id = id
         else:
-            base.__nb_object += 1
+            Base.__nb_objects += 1
             self.id = self.__nb_objects
 
     @staticmethod

@@ -23,13 +23,13 @@ class Square(Rectangle):
     @size.setter
     def size(self, value):
         """validateion from class Rectangle"""
-        self.width = vlaue
+        self.width = value
         self.height = value
 
     def update(self, *args, **kwargs):
         """assigns an argument to each attribute"""
         if len(args):
-            if k, m in enumerate(args):
+            for k, m in enumerate(args):
                 if k == 0:
                     self.id = m
                 elif k == 1:
