@@ -11,6 +11,14 @@ Variables
           - or you can just do them on the same line
           - eg: let myname = "cindy";
           - you call the variable by calling: myname; also you can change the value by: myname = "jeby"
+   - VAR: - works the same as let it is also used to declare variables
+          - it can be used to declare the same variable name multiple times.
+   - CONST: - also used to declare vars.
+            - you must initialize them when you declare them
+            - you cant assign them to a new value after youve initialized them.
+            - you cant use const to do alot as let.
+            - we use const when we can and we use let when we have to.
+
    - Variables can hold values of different data types.
    - Eg: . string -> sequence of text enclodes in either double or single quotes
          . numbers
