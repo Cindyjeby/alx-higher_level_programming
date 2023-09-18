@@ -1,0 +1,20 @@
+#!/usr/bin/python3
+"""script that lists all cities of the database ordered by city id"""
+
+import MySQLdb
+import sys
+
+if __name__ == '__main__':
+    conn = MySQLdb.connect(host='localhost', port=3306,
+            user=sys.argv[1], passwd=sys.argv[2],
+            db=sys.argv[3], charset='utf8')
+    cur = conn.cursor()
+    cur.execute('SELECT `c`.`id`, `c`.`name`, `s`.`name` \
+            FROM `cities` as `c` \
+            INNER JOIN `states` as.`id` \
+            ORDER BY `c`.`id`')
+    cities = cur.fetchall()
+    for city in cities:
+        print(city)
+        cur.close()
+        conn.close(
