@@ -10,7 +10,7 @@ if __name__ == '__main__':
             db=sys.argv[3], charset='utf8')
 
     cur = conn.cursor()
-    cur.execute('SELECT * FROM state ORDER BY id ASC;')
+    cur.execute('SELECT * FROM states ORDER BY id ASC;')
     states = cur.fetchall()
     for state in states:
         if state[1][0] == 'N':
