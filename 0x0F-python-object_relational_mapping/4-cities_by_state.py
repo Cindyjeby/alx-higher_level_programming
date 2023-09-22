@@ -11,10 +11,11 @@ if __name__ == '__main__':
     cur = conn.cursor()
     cur.execute('SELECT `c`.`id`, `c`.`name`, `s`.`name` \
             FROM `cities` as `c` \
-            INNER JOIN `states` as.`id` \
+            INNER JOIN `states` as `s` \
+            ON `c`.`state_id` = `s`.`id` \
             ORDER BY `c`.`id`')
     cities = cur.fetchall()
     for city in cities:
         print(city)
-        cur.close()
-        conn.close(
+    cur.close()
+    conn.close()
