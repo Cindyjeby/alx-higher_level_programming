@@ -56,16 +56,16 @@
 <h3>Array of objects</h3>
 <p>As stated earlier arrays are in cloded in [] while objects are inclode in {} so in this the object is inside the array. for example:</p>
 <p>
-[
-  {
-    "name": "John",
-    "age": 30,
-    "city": "New York"
-  },
-  {
-    "name": "Alice",
-    "age": 25,
-    "city": "Los Angeles"
-  }
+[<br>
+  {<br>
+    "name": "John",<br>
+    "age": 30,<br>
+    "city": "New York"<br>
+  },<br>
+  {<br>
+    "name": "Alice",<br>
+    "age": 25,<br>
+    "city": "Los Angeles"<br>
+  }<br>
 ]
 </p>
